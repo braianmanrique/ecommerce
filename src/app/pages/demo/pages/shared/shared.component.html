@@ -1,0 +1,11 @@
+<h2>Formularios</h2>
+
+<app-button (click)="onPatchValue()">Add texto</app-button>
+
+<form [formGroup]="form" novalidate autocomplete="off" (ngSubmit)="onSubmit()">
+
+    <app-form-field>
+        <app-input formControlName="input"></app-input>
+
+    </app-form-field>
+</form>
